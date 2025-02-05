@@ -27,7 +27,11 @@
             const students = ['Miftahul', 'Huda', 'Guntara'];
 
             //inisial likes nya adalah 0
-            const [likes, setLikes] = React.useState(0);    
+            const [likes, setLikes] = React.useState(0);  
+            
+            function handleClick(){
+                setLikes(likes + 1);
+            }
 
             // {handleClick} tanpa () tidak akan langsung dijalankan, namun harus menunggu button diklik terlebih dahulu
             // ({likes}) dengan () akan langsung dijalankan, karena terdapat kurung disana
